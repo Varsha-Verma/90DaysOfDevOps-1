@@ -1,0 +1,67 @@
+#This file is written by Varsha Verma
+
+Tasks
+
+1.Explain in your own words and examples, what is Shell Scripting for DevOps.
+Shell Script is the file consists of list of commands executed in sequential manner. It helps in automating the day to day tasks of Devops Engineer and saves time. Example if you want to schedule backup of your file/logs then by the help ofshell script it can be automated to take backup of desired file at specified time and there will be no manual intervention.
+====================================================================
+
+2.What is #!/bin/bash? can we write #!/bin/sh as well?
+#!/bin/bash  ->This is called 'bang' or 'shebang'line which specifies the absolute path to the Bash Interpreter. It has Point character (#!) and complete path of the interpreter (here which is Bash).
+#!/bin/sh    ->By default this will be used, if no interpreter is specified
+
+=====================================================================
+
+3.Write a Shell Script which prints I will complete #90DaysOofDevOps challenge
+#Commands#:
+vi challenge.sh
+
+#Script#:
+#!/bin/bash
+echo "I will complete #90DaysOfDevOps challenge"
+
+===================================================================
+
+4.Write a Shell Script to take user input, input from arguments and print the variables.
+#Command#:
+./script.sh $arg1 $arg2
+./variables.sh  Varsha 007
+
+#Script#:
+cat variables.sh
+echo "Hello $1 your EmpID is $2:
+
+Output:
+Hello Varsha your EMPID is 007
+
+=====================================================================
+5.Write an Example of If else in Shell Scripting by comparing 2 numbers:
+#Commands#:
+touch Comparision.sh
+chmod u+x Comparision.sh
+
+#Script#::
+cat Comparision.sh
+#!/bin/bash
+
+echo "User has entered two numbers as: $1,$2"
+echo ""
+echo "Lets compare $1 and $2"
+echo ""
+if [ $1 -gt $2 ]
+then
+        echo "$1 is greater than $2"
+elif [ $1 -lt $2 ]
+then
+        echo "$2 is greater than $1"
+else
+        echo "$1 and $2 are equal"
+fi
+
+#Output#:
+./Comparision.sh 8 9
+User has entered two numbers as: 8,9
+
+Lets compare 8 and 9
+
+9 is greater than 8
