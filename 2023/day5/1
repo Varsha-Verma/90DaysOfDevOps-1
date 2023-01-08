@@ -1,0 +1,7 @@
+#This script is written by Varsha Verma
+
+#!/bin/bash
+echo "Directories to be created by name $1, starting from $2 till $3"
+cd 
+mkdir $1($2..$3)
+echo "Your directories are ready!!!!"
