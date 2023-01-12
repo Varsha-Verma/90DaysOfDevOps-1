@@ -1,0 +1,11 @@
+#This file is written by Varsha Verma
+
+#How to check Present Working Directory in Linux?
+#Command 'pwd' will show the Present Working Directory
+
+#How to check all the files, folders including the hidden one's?
+#We will be using 'ls -a'
+
+#How to create Nested Directory?
+#By using '-p' flag with 'mkdir <directory name>.
+#Ex: mkdir -p A/B/C/D/E
