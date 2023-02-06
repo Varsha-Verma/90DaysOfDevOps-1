@@ -1,4 +1,4 @@
-#This script is written by Varsha Verma
+#This script is written by Varsha Verma-for day5
 
 #!/bin/bash
 echo "Directories to be created by name $1, starting from $2 till $3"
